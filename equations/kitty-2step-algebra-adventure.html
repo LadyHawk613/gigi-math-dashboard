@@ -88,6 +88,12 @@
             font-weight: bold;
         }
 
+        .input-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
         input[type="number"] {
             width: 70px;
             padding: 5px;
@@ -95,6 +101,15 @@
             border: 2px solid #ff8b66;
             border-radius: 5px;
             text-align: center;
+        }
+
+        .cat-icon {
+            font-size: 1.3em;
+            display: none;
+        }
+
+        .cat-icon.show {
+            display: inline-block;
         }
 
         .btn {
@@ -145,23 +160,38 @@
         
         <div class="problem-card">
             <span class="problem-text">1) 2x - 4 = 10</span>
-            <input type="number" id="l1-p1" data-answer="7">
+            <div class="input-group">
+                <input type="number" id="l1-p1" data-answer="7">
+                <span class="cat-icon" id="l1-cat-1">😺</span>
+            </div>
         </div>
         <div class="problem-card">
             <span class="problem-text">2) 3x - 6 = 12</span>
-            <input type="number" id="l1-p2" data-answer="6">
+            <div class="input-group">
+                <input type="number" id="l1-p2" data-answer="6">
+                <span class="cat-icon" id="l1-cat-2">😺</span>
+            </div>
         </div>
         <div class="problem-card">
             <span class="problem-text">3) 4x - 5 = 15</span>
-            <input type="number" id="l1-p3" data-answer="5">
+            <div class="input-group">
+                <input type="number" id="l1-p3" data-answer="5">
+                <span class="cat-icon" id="l1-cat-3">😺</span>
+            </div>
         </div>
         <div class="problem-card">
             <span class="problem-text">4) 5x - 3 = 22</span>
-            <input type="number" id="l1-p4" data-answer="5">
+            <div class="input-group">
+                <input type="number" id="l1-p4" data-answer="5">
+                <span class="cat-icon" id="l1-cat-4">😺</span>
+            </div>
         </div>
         <div class="problem-card">
             <span class="problem-text">5) 2x - 7 = 11</span>
-            <input type="number" id="l1-p5" data-answer="9">
+            <div class="input-group">
+                <input type="number" id="l1-p5" data-answer="9">
+                <span class="cat-icon" id="l1-cat-5">😺</span>
+            </div>
         </div>
 
         <button class="btn" onclick="checkAnswers(1)">Check Level 1</button>
@@ -175,23 +205,38 @@
         
         <div class="problem-card">
             <span class="problem-text">1) 2x + 4 = 12</span>
-            <input type="number" id="l2-p1" data-answer="4">
+            <div class="input-group">
+                <input type="number" id="l2-p1" data-answer="4">
+                <span class="cat-icon" id="l2-cat-1">😺</span>
+            </div>
         </div>
         <div class="problem-card">
             <span class="problem-text">2) 3x + 5 = 20</span>
-            <input type="number" id="l2-p2" data-answer="5">
+            <div class="input-group">
+                <input type="number" id="l2-p2" data-answer="5">
+                <span class="cat-icon" id="l2-cat-2">😺</span>
+            </div>
         </div>
         <div class="problem-card">
             <span class="problem-text">3) 4x + 6 = 26</span>
-            <input type="number" id="l2-p3" data-answer="5">
+            <div class="input-group">
+                <input type="number" id="l2-p3" data-answer="5">
+                <span class="cat-icon" id="l2-cat-3">😺</span>
+            </div>
         </div>
         <div class="problem-card">
             <span class="problem-text">4) 5x + 3 = 18</span>
-            <input type="number" id="l2-p4" data-answer="3">
+            <div class="input-group">
+                <input type="number" id="l2-p4" data-answer="3">
+                <span class="cat-icon" id="l2-cat-4">😺</span>
+            </div>
         </div>
         <div class="problem-card">
             <span class="problem-text">5) 3x + 7 = 22</span>
-            <input type="number" id="l2-p5" data-answer="5">
+            <div class="input-group">
+                <input type="number" id="l2-p5" data-answer="5">
+                <span class="cat-icon" id="l2-cat-5">😺</span>
+            </div>
         </div>
 
         <button class="btn" onclick="checkAnswers(2)">Check Level 2</button>
@@ -205,23 +250,38 @@
         
         <div class="problem-card">
             <span class="problem-text">1) (x / 2) + 3 = 8</span>
-            <input type="number" id="l3-p1" data-answer="10">
+            <div class="input-group">
+                <input type="number" id="l3-p1" data-answer="10">
+                <span class="cat-icon" id="l3-cat-1">😺</span>
+            </div>
         </div>
         <div class="problem-card">
             <span class="problem-text">2) (x / 3) - 2 = 4</span>
-            <input type="number" id="l3-p2" data-answer="18">
+            <div class="input-group">
+                <input type="number" id="l3-p2" data-answer="18">
+                <span class="cat-icon" id="l3-cat-2">😺</span>
+            </div>
         </div>
         <div class="problem-card">
             <span class="problem-text">3) (x / 4) + 1 = 6</span>
-            <input type="number" id="l3-p3" data-answer="20">
+            <div class="input-group">
+                <input type="number" id="l3-p3" data-answer="20">
+                <span class="cat-icon" id="l3-cat-3">😺</span>
+            </div>
         </div>
         <div class="problem-card">
             <span class="problem-text">4) (x / 5) - 3 = 2</span>
-            <input type="number" id="l3-p4" data-answer="25">
+            <div class="input-group">
+                <input type="number" id="l3-p4" data-answer="25">
+                <span class="cat-icon" id="l3-cat-4">😺</span>
+            </div>
         </div>
         <div class="problem-card">
             <span class="problem-text">5) (x / 3) + 4 = 9</span>
-            <input type="number" id="l3-p5" data-answer="15">
+            <div class="input-group">
+                <input type="number" id="l3-p5" data-answer="15">
+                <span class="cat-icon" id="l3-cat-5">😺</span>
+            </div>
         </div>
 
         <button class="btn" onclick="checkAnswers(3)">Check Level 3</button>
@@ -246,14 +306,17 @@
 
         for (let i = 1; i <= total; i++) {
             const input = document.getElementById(`l${levelNum}-p${i}`);
+            const catIcon = document.getElementById(`l${levelNum}-cat-${i}`);
             const userAnswer = parseFloat(input.value);
             const correctAnswer = parseFloat(input.getAttribute('data-answer'));
 
             if (userAnswer === correctAnswer) {
                 correctCount++;
                 input.style.borderColor = '#4CAF50'; // Green for correct
+                catIcon.classList.add('show');       // Show smiling cat face
             } else {
                 input.style.borderColor = '#f44336'; // Red for incorrect
+                catIcon.classList.remove('show');    // Hide cat face if wrong
             }
         }
 
