@@ -86,6 +86,28 @@
         .problem-text {
             font-size: 1.2em;
             font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Vertical fraction styling */
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 0.95em;
+            margin: 0 4px;
+        }
+
+        .numerator {
+            border-bottom: 2px solid #4a2e2b;
+            padding-bottom: 1px;
+        }
+
+        .denominator {
+            padding-top: 1px;
         }
 
         .input-group {
@@ -246,38 +268,48 @@
     <!-- LEVEL 3: Fractions & Multiplication -->
     <div id="level-3" class="level-content">
         <h3>Level 3: Fractions & Multiplication</h3>
-        <p style="font-size: 0.95em; color: #666;">Solve for x. (Example: (x / 2) + 3 = 8)</p>
+        <p style="font-size: 0.95em; color: #666;">Solve for x. (Example: x / 2 vertically + 3 = 8)</p>
         
         <div class="problem-card">
-            <span class="problem-text">1) (x / 2) + 3 = 8</span>
+            <span class="problem-text">
+                1) <span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span> + 3 = 8
+            </span>
             <div class="input-group">
                 <input type="number" id="l3-p1" data-answer="10">
                 <span class="cat-icon" id="l3-cat-1">😺</span>
             </div>
         </div>
         <div class="problem-card">
-            <span class="problem-text">2) (x / 3) - 2 = 4</span>
+            <span class="problem-text">
+                2) <span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span> - 2 = 4
+            </span>
             <div class="input-group">
                 <input type="number" id="l3-p2" data-answer="18">
                 <span class="cat-icon" id="l3-cat-2">😺</span>
             </div>
         </div>
         <div class="problem-card">
-            <span class="problem-text">3) (x / 4) + 1 = 6</span>
+            <span class="problem-text">
+                3) <span class="fraction"><span class="numerator">x</span><span class="denominator">4</span></span> + 1 = 6
+            </span>
             <div class="input-group">
                 <input type="number" id="l3-p3" data-answer="20">
                 <span class="cat-icon" id="l3-cat-3">😺</span>
             </div>
         </div>
         <div class="problem-card">
-            <span class="problem-text">4) (x / 5) - 3 = 2</span>
+            <span class="problem-text">
+                4) <span class="fraction"><span class="numerator">x</span><span class="denominator">5</span></span> - 3 = 2
+            </span>
             <div class="input-group">
                 <input type="number" id="l3-p4" data-answer="25">
                 <span class="cat-icon" id="l3-cat-4">😺</span>
             </div>
         </div>
         <div class="problem-card">
-            <span class="problem-text">5) (x / 3) + 4 = 9</span>
+            <span class="problem-text">
+                5) <span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span> + 4 = 9
+            </span>
             <div class="input-group">
                 <input type="number" id="l3-p5" data-answer="15">
                 <span class="cat-icon" id="l3-cat-5">😺</span>
